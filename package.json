@@ -1,1 +1,40 @@
-{     "devDependencies": {         "aa-mysql": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-aa-mysql",     "homepage": "https://github.com/npmtest/node-npmtest-aa-mysql",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-aa-mysql.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  [aa-mysql (v1.1.2)](https://github.com/amoa400/aa-mysql)  [![npm package](https://img.shields.io/npm/v/npmtest-aa-mysql.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-aa-mysql) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-aa-mysql.svg)](https://travis-ci.org/npmtest/node-npmtest-aa-mysql)",
+    "devDependencies": {
+        "aa-mysql": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-aa-mysql",
+    "keywords": [
+        "coverage",
+        "test",
+        "aa-mysql"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_aa_mysql.js",
+    "name": "npmtest-aa-mysql",
+    "nameAlias": "npmtest_aa_mysql",
+    "nameOriginal": "npmtest-aa-mysql",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-aa-mysql.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.2"
+}
