@@ -1,6 +1,6 @@
 # npmtest-aa-mysql
 
-#### basic test coverage for  [aa-mysql (v1.1.2)](https://github.com/amoa400/aa-mysql)  [![npm package](https://img.shields.io/npm/v/npmtest-aa-mysql.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-aa-mysql) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-aa-mysql.svg)](https://travis-ci.org/npmtest/node-npmtest-aa-mysql)
+#### basic test-coverage for  [aa-mysql (v1.1.2)](https://github.com/amoa400/aa-mysql)  [![npm package](https://img.shields.io/npm/v/npmtest-aa-mysql.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-aa-mysql) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-aa-mysql.svg)](https://travis-ci.org/npmtest/node-npmtest-aa-mysql)
 
 #### A simple and flexible mysql library for node.
 
@@ -80,7 +80,8 @@
         "url": "git+https://github.com/amoa400/aa-mysql.git"
     },
     "scripts": {},
-    "version": "1.1.2"
+    "version": "1.1.2",
+    "bin": {}
 }
 ```
 
